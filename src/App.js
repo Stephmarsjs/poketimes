@@ -4,10 +4,10 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Contact from './components/Contact'
 import About from './components/About'
+import Post from './components/Post'
 
 class App extends Component {
   render() {
-
   return (
     <BrowserRouter>
     <div className="App">
@@ -15,6 +15,7 @@ class App extends Component {
      <Route path='/home' component={Home} />
      <Route path='/about' component={About} />
      <Route path='/contact' component={Contact} />
+     <Route path="/:post_id" component={Post} />
     </div>
   </BrowserRouter>
   );
